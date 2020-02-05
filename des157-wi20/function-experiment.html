@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Function Experimentation</title>
+</head>
+<body>
+    <h1>JavaScript Function Experimentation</h1>
+    <script>
+
+        var userName = prompt ("Enter your name", "");
+        function checkName(name){
+
+            if (name == null || name == ""){
+                console.log ("Error: You didn't enter a name!");
+            } else {
+                console.log(`You are a wizard, ${name}!`);
+            }
+        }
+        checkName(userName);
+
+
+        var treat = ("a wizard?");
+        var upper = treat.toUpperCase();
+        function upperName (treat){
+            if (userName == null || userName == ""){
+                var upper = ("You're not worthy!");
+                console.log (upper.toUpperCase());
+            } else {
+                console.log(treat.toUpperCase());
+            }
+
+        }
+        upperName(upper);
+
+
+        num = [12,3,4,2];
+        function addNums(num){
+            for (var i = 0; i<num.length-1; i++){
+                var sum= num[i]+num[i];
+                var diff= sum - (num[i]+num[i+1]);
+                console.log(sum);
+                console.log(diff);
+                }
+            }
+        addNums(num);
+
+
+        var dessert= ["cake", "pie", "icecream", "candy","shake"];
+        function randomInt( min,max ){
+            return Math.floor((max-min+1)*Math.random())+min;
+        }
+        console.log (dessert[randomInt (0,dessert.length-1) ]);
+        
+
+        var myNum = prompt("please enter a number between 1 and 10", "");
+
+            if( parseInt(myNum) ){
+                console.log("TRUE: you have an integer");
+            }
+            else{ console.log("FALSE: you don't have an integer"); 
+            }
+
+    </script>
+</body>
+</html>
