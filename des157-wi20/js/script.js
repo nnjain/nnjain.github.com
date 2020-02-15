@@ -16,8 +16,8 @@ function setup() {
 
 function draw() {
     if(mouseIsPressed){
-        x = random(100,1100);
-        y = random(100,250);
+        x = random(0,1100);
+        y = random(0,250);
         fill (random(255), random(255), random(255));
         ellipse(x,y,100,100); 
     }
