@@ -6,7 +6,7 @@ body {
 
 header, footer {
     margin-bottom: 35px;
-    color: #684A4E;
+    color:#3A1269;
     text-decoration: none;
     text-align: center;
 }
@@ -34,7 +34,7 @@ section{
     text-align:center;
     margin:30px 20px;
     display:block;
-    background-color: #A9A9A9;
+    background-color: #BAC7BE;
 }
 
 ul, ol {
@@ -44,7 +44,7 @@ ul, ol {
 }
 
 li {
-    background-color: #684A4E;
+    background-color: #6A36B3;
     margin:0px 15px 15px 15px;
     display: flex;
     flex-flow: column;
