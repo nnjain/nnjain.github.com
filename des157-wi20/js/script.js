@@ -1,13 +1,5 @@
-
-var x = 150;
-var y = 150;
-var r = 140;
-var s = 140;
-var j = 230;
-var k = 30;
-
 function setup() {
-  var myCanvas = createCanvas(1100, 250);
+  var myCanvas = createCanvas(1200, 250);
   frameRate (8);
   noStroke();
   background('#E1E5F2');
@@ -16,9 +8,10 @@ function setup() {
 
 function draw() {
     if(mouseIsPressed){
-        x = random(0,1100);
-        y = random(0,250);
         fill (random(255), random(255), random(255));
-        ellipse(x,y,100,100); 
+        
+    } else {
+        fill (random(255), random(255), random(255),random(255));
     }
+    ellipse (mouseX,mouseY,random(100),random(100));
 }
