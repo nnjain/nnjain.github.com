@@ -1,0 +1,122 @@
+input {display: block; margin-bottom: 20px;}
+
+body {
+    background-image: url('images/img.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+
+#block{
+    background-color: pink;
+    border-radius: 25px;
+    opacity: 0.7;
+    margin:80px 600px 100px 420px;
+}
+
+#words{
+    padding:2px 20px;
+}
+
+h1{
+    margin-top:10px;
+    font-size: 70px;
+    color:purple;
+}
+
+footer {
+    background-color: purple;
+    width: 100%;
+}
+  
+footer nav ul {
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+  
+footer nav ul li {
+    margin: 1% 1%;
+    width: 10%;
+}
+  
+footer nav ul li a {
+    padding: 2%;
+    text-decoration: none;
+    font-size: 1em;
+    color:white;
+
+    /* @keyframes stretch {
+        0% {
+        transform: scale(.8);
+        background-color: #FC5C7D;
+        }
+    
+        100% {
+        transform: scale(1);
+        background-color: #6A82FB;
+        }
+    } */
+  
+.invisible{
+    display:none;
+}
+
+.visible {
+    font-size: 19px;
+    color: white;
+    font-family: Gaegu;
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 560px;
+    width: 300px;
+    padding: 20px;
+    animation-name: stretch;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+  
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 4px 9px 90px 4px rgba(229,229,229,0.37);
+}
+  
+#button {
+    margin-top: 25px;
+    background: linear-gradient(45deg, #4e54c8 0%, #8f94fb 100%);
+    border: none;
+    color: white;
+    padding: 12px 42px;
+    font-size: 16px;
+    width: 170px;
+    box-shadow: none;
+}
+  
+#button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+a {
+    color: #1B1B1E;
+    text-decoration: none;
+}
+ 
+a:hover {
+    color: pink;
+}
+
+
+
+  
