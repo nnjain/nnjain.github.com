@@ -48,20 +48,8 @@ footer nav ul li a {
     text-decoration: none;
     font-size: 1em;
     color:white;
-
-    /* @keyframes stretch {
-        0% {
-        transform: scale(.8);
-        background-color: #FC5C7D;
-        }
-    
-        100% {
-        transform: scale(1);
-        background-color: #6A82FB;
-        }
-    } */
   
-.invisible{
+.invisible {
     display:none;
 }
 
@@ -85,7 +73,6 @@ footer nav ul li a {
     animation-play-state: running;
 }
   
-
 input {
     padding: 10px;
     border-radius: 20px;
