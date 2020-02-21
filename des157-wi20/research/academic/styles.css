@@ -3,8 +3,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
 ul{
     list-style: none;
     text-decoration: none;
@@ -37,6 +35,7 @@ header{
 
 h2{
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 section{
