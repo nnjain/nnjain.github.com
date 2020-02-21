@@ -70,42 +70,11 @@
 				var milesNum = milesNum.toFixed(3);
 				document.getElementsByTagName("h2")[0].innerHTML=`${kiloNum} kilometers converts to ${milesNum} miles`;
 			}
-			else{
+			else {
 				document.getElementsByTagName("h2")[0].innerHTML="Please enter a number";
 			}
 	
 		})
-
-		// var convertType = 0;
-        // var myForm = document.getElementById("convert");
-
-        // function mToK(myNum){
-        //     var newNum
-        //     newNum = myNum * 1.609344;
-        //     newNum = newNum.toFixed(3);
-        //     return newNum;
-        // }
-
-        // function kToM(myNum){
-        //     newNum = myNum * .621371192;
-        //     newNum = newNum.toFixed(3);
-        //     return newNum;
-        // }
-	
-	
-
-        // myForm.addEventListener("submit", function(e){
-        //     e.preventDefault();
-
-        //     var myInput = parseFloat(document.querySelector("input").value);
-        //     var divTag = document.getElementById("answer");
-
-        //     if (convertType == 0){
-        //         divTag.innerHTML = `<h2>${myInput} miles converts to ${mToK(myInput)} kilometers.</h2>`;
-        //     } else {
-        //         divTag.innerHTML = `<h2>${myInput} kilometers converts to ${kToM(myInput)} miles.</h2>`;
-        //     }
-        // });	
 		
 		</script>
 </body>
