@@ -1,110 +1,109 @@
 'use strict';
 
-var desktop = document.querySelector('#desktop');
-
-var balm = document.querySelector('#balm');
+var desktop = document.querySelector('#basic');
 var phone = document.querySelector('#phone');
-var bottle = document.querySelector('#bottle');
+var airp = document.querySelector('#airp');
+var tumbler= document.querySelector('#tumbler');
 
-var balmhov = document.querySelector('#balmhov');
-var phonehov = document.querySelector('#phonehov');
-var bottlehov = document.querySelector('#bottlehov');
+var airphov = document.querySelector('#airphov');
+var phnhov = document.querySelector('#phnhov');
+var tumbhov = document.querySelector('#tumbhov');
 
-var bmclose = document.querySelector('#bmclose');
+var arclose = document.querySelector('#arclose');
 var pnclose = document.querySelector('#pnclose');
-var btclose = document.querySelector('#btclose');
+var trclose = document.querySelector('#trclose');
 
-var bmpic = document.querySelector('#bmpic');
 var pnpic = document.querySelector('#pnpic');
-var btpic = document.querySelector('#btpic');
+var arpic = document.querySelector('#arpic');
+var trpic = document.querySelector('#trpic');
 
-var bmpic2 = document.querySelector('#bmpic2');
 var pnpic2 = document.querySelector('#pnpic2');
-var btpic2 = document.querySelector('#btpic2');
+var arpic2 = document.querySelector('#arpic2');
+var trpic2 = document.querySelector('#trpic2');
 
 
 //img hover for buttons
 
-balm.addEventListener('mouseover',function(){
-  bmpic.src='images/balms.svg';
+airp.addEventListener('mouseover',function(){
+  arpic.src='images/airpodso.png';
 })
 
-balm.addEventListener('mouseout',function(){
-  bmpic.src='images/balmo.svg';
+airp.addEventListener('mouseout',function(){
+  arpic.src='images/airpodss.png';
 })
 
 phone.addEventListener('mouseover',function(){
-  pnpic.src='images/phones.svg';
+  pnpic.src='images/phoneo.png';
 })
 
 phone.addEventListener('mouseout',function(){
-  pnpic.src='images/phoneo.svg';
+  pnpic.src='images/phones.png';
 })
 
-bottle.addEventListener('mouseover',function(){
-  btpic.src='images/bottles.svg';
+tumbler.addEventListener('mouseover',function(){
+  trpic.src='images/tumblero.png';
 })
 
-bottle.addEventListener('mouseout',function(){
-  btpic.src='images/bottleo.svg';
+tumbler.addEventListener('mouseout',function(){
+  trpic.src='images/tumblers.png';
 })
 
 //overlay behavior
 
-balm.addEventListener('click',function(){
-  balmhov.style.left='50%';
-  desktop.style.marginLeft='100%';
+airp.addEventListener('click',function(){
+  airphov.style.left='50%';
+  basic.style.marginLeft='100%';
 })
 
 phone.addEventListener('click',function(){
-  phonehov.style.left='50%';
-  desktop.style.marginLeft='100%';
+  phnhov.style.left='50%';
+  basic.style.marginLeft='100%';
 })
 
-bottle.addEventListener('click',function(){
-  bottlehov.style.left='50%';
-  desktop.style.marginLeft='100%';
+tumbler.addEventListener('click',function(){
+  tumbhov.style.left='50%';
+  basic.style.marginLeft='100%';
 })
 
 //desktop close behavior
 
-bmclose.addEventListener('click',function(){
-  balmhov.style.left='-50%';
-  desktop.style.marginLeft='0';
+arclose.addEventListener('click',function(){
+  airphov.style.left='-50%';
+  basic.style.marginLeft='0';
 })
 
 pnclose.addEventListener('click',function(){
-  phonehov.style.left='-50%';
-  desktop.style.marginLeft='0';
+  phnhov.style.left='-50%';
+  basic.style.marginLeft='0';
 })
 
-btclose.addEventListener('click',function(){
-  bottlehov.style.left='-50%';
-  desktop.style.marginLeft='0';
+trclose.addEventListener('click',function(){
+  tumbhov.style.left='-50%';
+  basic.style.marginLeft='0';
 })
 
 //img hover for overlays
 
-bmpic2.addEventListener('mouseover',function(){
-  bmpic2.src='images/balmx.svg';
-})
-
-bmpic2.addEventListener('mouseout',function(){
-  bmpic2.src='images/balms.svg';
-})
-
 pnpic2.addEventListener('mouseover',function(){
-  pnpic2.src='images/phonex.svg';
+  pnpic2.src='images/phones.png';
 })
 
 pnpic2.addEventListener('mouseout',function(){
-  pnpic2.src='images/phones.svg';
+  pnpic2.src='images/phoneo.png';
 })
 
-btpic2.addEventListener('mouseover',function(){
-  btpic2.src='images/bottlex.svg';
+arpic2.addEventListener('mouseover',function(){
+  arpic2.src='images/airpodss.png';
 })
 
-btpic2.addEventListener('mouseout',function(){
-  btpic2.src='images/bottles.svg';
+arpic2.addEventListener('mouseout',function(){
+  arpic2.src='images/airpodso.png';
+})
+
+trpic2.addEventListener('mouseover',function(){
+  trpic2.src='images/tumblers.png';
+})
+
+trpic2.addEventListener('mouseout',function(){
+  trpic2.src='images/tumblero.png';
 })

@@ -12,36 +12,82 @@
   h1 {
     text-align: center;
     width: 100%;
-    font-size: 3em;
-    font-weight: 900;
-    color: #009FB7;
+    padding: 3% 6%;
+    font-size: 4em;
   }
   
+  #arpic, #pnpic, #trpic{
+    opacity: .7;
+    transition: opacity .5s;
+  }
+
   #basic {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: margin 1.5s;
-  }
-  
-  img {
-    text-align: center;
-    margin: 0;
-  }
-  
-  #phone, #airp, #tumbler {
     display: flex;
     flex-direction: row;
+    position: absolute;
     width: 100%;
-    padding: 2.2%;
-    justify-content: center;
-    align-content: center;
-    background-color:#AFD1D9; 
+    margin-left: 0;
+    transition: all 1.3s ease;
   }
   
-  #overlays {
+  #airp img, #phone img, #tumbler img {
+    margin: 0px;
+    text-align: center;
+    width: 150px;
+    height: 250px;
+    opacity: .7;
+  }
+  
+  #airp, #tumbler, #phone {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    height: 240px;
+    margin: 2%;
+    padding: 10px;
+    transform: scale(1);
+    border-radius: 50%;
+    cursor: pointer;
+    background:#F8DEC5;
+    justify-content: center;
+    align-content: center;
+    transition: transform .5s;
+  }
+
+  #airp img:hover, #phone img:hover, #tumbler img:hover {
+    opacity: 1;
+  }
+
+  #airp:hover, #phone:hover, #tumbler:hover {
+    transform: scale(1.05);
+  }
+
+  #airphov, #phnhov, #tumbhov {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: -200%;
+    transform: translate(-50%,-40%);
+    padding: 3%;
+    border-radius: 5%;
+    transition: left 1.3s ease;
+  }
+
+  #airphov p, #phnhov p, #tumblerhov p {
+    width: 100%;
+    padding: 5%;
+    font-size: 1.5em;
+  }
+
+  #airphov img, #phnhov img, #tumblerhov img {
+    width: 200px;
+    height: 360px;
+  }
+  
+  #overtop{
     display: flex;
     width: 100%;
     margin: auto;
@@ -55,7 +101,7 @@
     top: 15.5%;
     left: -50%;
     padding-bottom: 3%;
-    background: #8689C3; #F8DEC5
+    background: #8689C3; 
     transform: translateX(-50%);
     transition: left 1.5s;
   }
@@ -113,6 +159,8 @@
   a:hover {
     color: #78CAD2;
   }
+
+  
   
   /* @media only screen and (min-width: 769px) {
     h1 {
@@ -136,17 +184,7 @@
       transition: all 1.3s ease;
     }
   
-    #balm, #bottle, #phone {
-      display: flex;
-      width: 340px;
-      height: 340px;
-      margin: auto;
-      padding: 10px;
-      transform: scale(1);
-      border-radius: 50%;
-      cursor: pointer;
-      transition: transform .5s;
-    }
+    
   
     #balm {
       background-color: #78CAD2;
@@ -175,7 +213,7 @@
       transform: scale(1.05);
     }
   
-    #balmhov, #phonehov, #bottlehov {
+    #airphov, #phnhov, #tumbhov {
       display: grid;
       grid-template-columns: 1fr 2fr;
       align-items: center;
@@ -185,9 +223,7 @@
       left: -200%;
       transform: translate(-50%,-40%);
       padding: 3%;
-  
       border-radius: 5%;
-  
       transition: left 1.3s ease;
     }
   
