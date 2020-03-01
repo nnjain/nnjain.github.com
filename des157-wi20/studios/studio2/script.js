@@ -85,25 +85,25 @@ trclose.addEventListener('click',function(){
 //img hover for overlays
 
 pnpic2.addEventListener('mouseover',function(){
-  pnpic2.src='images/phones.png';
-})
-
-pnpic2.addEventListener('mouseout',function(){
   pnpic2.src='images/phoneo.png';
 })
 
-arpic2.addEventListener('mouseover',function(){
-  arpic2.src='images/airpodss.png';
+pnpic2.addEventListener('mouseout',function(){
+  pnpic2.src='images/phones.png';
 })
 
-arpic2.addEventListener('mouseout',function(){
+arpic2.addEventListener('mouseover',function(){
   arpic2.src='images/airpodso.png';
 })
 
+arpic2.addEventListener('mouseout',function(){
+  arpic2.src='images/airpodss.png';
+})
+
 trpic2.addEventListener('mouseover',function(){
-  trpic2.src='images/tumblers.png';
+  trpic2.src='images/tumblero.png';
 })
 
 trpic2.addEventListener('mouseout',function(){
-  trpic2.src='images/tumblero.png';
+  trpic2.src='images/tumblers.png';
 })
