@@ -6,7 +6,7 @@
     width:100%;
     margin: auto;
     background: rgb(232, 238, 240);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans';
   }
   
   h1 {
@@ -14,6 +14,7 @@
     width: 100%;
     padding: 3% 6%;
     font-size: 4em;
+    color: darkcyan;
   }
   
   #arpic, #pnpic, #trpic{
@@ -21,9 +22,10 @@
     transition: opacity .5s;
   }
 
+
   #basic {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: absolute;
     width: 100%;
     margin-left: 0;
@@ -40,12 +42,12 @@
   
   #airp, #tumbler, #phone {
     display: flex;
-    flex-direction: row;
-    width: 240px;
-    height: 240px;
-    margin: 2%;
+    flex-direction: column-reverse;
+    width: 400px;
+    height: 400px;
+    margin-left: 35%;
     padding: 10px;
-    transform: scale(1);
+    transform: scale(0.8);
     border-radius: 50%;
     cursor: pointer;
     background:#F8DEC5;
@@ -64,22 +66,23 @@
 
   #airphov, #phnhov, #tumbhov {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    /* grid-template-columns: 1fr 0.2fr; */
     align-items: center;
     position: absolute;
-    width: 75%;
-    top: 50%;
+    width: 25%;
+    top: 40%;
     left: -200%;
     transform: translate(-50%,-40%);
-    padding: 3%;
+    /* padding: 3%; */
     border-radius: 5%;
-    transition: left 1.3s ease;
+    transition: bottom 1.3s ease;
   }
 
-  #airphov p, #phnhov p, #tumblerhov p {
-    width: 100%;
+  #airphov p, #phnhov p, #tumbhov p {
+    width: 120%;
+    margin: 0px;
     padding: 5%;
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   #airphov img, #phnhov img, #tumblerhov img {
@@ -95,15 +98,15 @@
   
   #phnhov, #airphov, #tumbhov {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
-    width:100%;
-    top: 15.5%;
-    left: -50%;
-    padding-bottom: 3%;
-    background: #8689C3; 
+    width:75%;
+    top: 25%;
+    right: -50%;
+    padding-bottom: 5px;
+    background: rgb(170, 199, 184); 
     transform: translateX(-50%);
-    transition: left 1.5s;
+    transition: right 1.5s;
   }
   
   p {
@@ -115,10 +118,10 @@
     color: #f4f8ff;
   }
   
-  #phnhov img, #airphov img, #tumbhov img{
+  /* #phnhov img, #airphov img, #tumbhov img{
     margin: auto;
     padding-top: 4%
-  }
+  } */
   
   #pnclose, #arclose, #trclose {
     color: #C4FFF9;
@@ -127,7 +130,8 @@
     right: 3%;
     cursor: pointer;
   }
-  
+
+
   /* footer */
   
   footer {
