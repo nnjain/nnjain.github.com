@@ -20,10 +20,10 @@
 
   li{
       color:black;
-      font-size: 32px;
+      font-size: 4em;
   }
 
-  body p{
+  p{
     margin:0px;
     padding-top: 0px;
     padding-left:2%;
@@ -34,13 +34,6 @@
     color: #f4f8ff;
   }
 
-  h1 {
-    text-align: center;
-    width: 100%;
-    padding: 3% 6%;
-    font-size: 4em;
-    color: black;
-  }
   
   #pnclose, #arclose, #trclose {
     color: #C4FFF9;
@@ -73,7 +66,7 @@
     top:245px;
   }
 
-  button {
-
+  button, h2 {
+    margin-left: 2%;
   }
   
