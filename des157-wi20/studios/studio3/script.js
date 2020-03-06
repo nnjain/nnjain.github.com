@@ -15,12 +15,12 @@
 
   var gameData = {
     dice: [
-      "1die.jpg",
-      "2die.jpg",
-      "3die.jpg",
-      "4die.jpg",
-      "5die.jpg",
-      "6die.jpg"
+      "images/1die.png",
+      "images/2die.png",
+      "images/3die.png",
+      "images/4die.png",
+      "images/5die.png",
+      "images/6die.png"
     ],
     players: ["Player 1", "Player 2"],
     score: [0, 0],

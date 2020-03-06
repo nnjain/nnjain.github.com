@@ -56,4 +56,24 @@
     padding-top: 20%;
     text-align: center;
   }
+
+  img {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:66%;
+    top:45px;
+  }
+
+  img :last-of-type{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:66%;
+    top:245px;
+  }
+
+  button {
+
+  }
   
