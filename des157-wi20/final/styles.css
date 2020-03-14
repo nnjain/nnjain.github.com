@@ -76,7 +76,7 @@ body {
     line-height: 1em;
 }
 
-#voice p {
+#voice p , #question p{
     margin-top: 10px;
     margin-left: 55%;
     margin-right: 7%;
@@ -94,7 +94,7 @@ body {
    width:500px;
 }
 
-#questions h2 {
+#questions h2, #feedback h2 {
     margin-top: 10px;
     margin-left: 55%;
     margin-right: 7%;
