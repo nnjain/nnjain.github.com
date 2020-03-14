@@ -44,7 +44,7 @@ body {
     color: darkblue;
 }
 
-#text {
+#text{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,7 +76,7 @@ body {
     line-height: 1em;
 }
 
-#voice p , #question p{
+#voice p {
     margin-top: 10px;
     margin-left: 55%;
     margin-right: 7%;
@@ -101,4 +101,13 @@ body {
     color: whitesmoke;
     font-size: 46px;
     line-height: 1em;
+}
+
+#questions p, #feedback p {
+    margin: 5%;
+    margin-left: 55%;
+    margin-right: 7%;
+    color: whitesmoke;
+    font-size: 16px;
+    line-height: 0.2em;
 }
