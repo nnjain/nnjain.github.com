@@ -43,12 +43,9 @@
                 postTops.push(Math.floor(post.getBoundingClientRect().top) + window.pageYOffset)
             })
             
-            //console.log(postTops);
     
             window.addEventListener ('scroll', function(){
                 pagetop = window.pageYOffset +250;
-                //console.log (pagetop);
-            
     
                 if (pagetop>postTops[counter+1]) {
                     counter++;
