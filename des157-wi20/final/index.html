@@ -12,10 +12,10 @@
     <div id = "nav1">
         <nav>
             <ul>
-                <li><a href ="">Bali</a></li>
-                <li><a href ="">Voice</a></li>
-                <li><a href ="">Question</a></li>
-                <li><a href ="">Preference</a></li>
+                <li><a href ="#text" class="selected">Bali</a></li>
+                <li><a href ="#voice">Voice</a></li>
+                <li><a href ="#questions">Question</a></li>
+                <li><a href ="#feedback">Preference</a></li>
             </ul>
         </nav>
     </div>
@@ -39,20 +39,158 @@
         <p>What is my schedule today?</p>
         <p>What are nearby restaurants?</p>
         <p>What is 1 mile as kilometers?</p>
-        <img src="images/img.gif">
+        <img id="imge1" src="images/img1.gif">
         <img src="images/img2.gif">
         <img src="images/img3.gif">
     </div>
 
-    <div id = "feedback">
-        <h2>Feedback</h2>
-        <p>Which voice did you find friendly?</p>
-        <p>Which voice would you continue using?</p>
-        <p>Which voice would you not use in the future?</p>
-        <p>Which voice could you relate with?</p>
-        <p>Which voice is the most empowering?</p>
-
+    <div id= "caption">
+        <p>Bali</p>
+        <p>Samantha</p>
+        <p>Tom</p>
     </div>
 
+    <div id = "feedback">
+        <h2>Feedback</h2>
+
+        <div id= "names">
+            <p>Bali</p>
+            <p>Samantha</p>
+            <p>Tom</p>
+        </div>
+
+        <p>Which voice did you find friendly?</p>
+        <form id="rbuttons"> 
+            <p>          
+                <input type = "radio"
+                       name = "grp1"
+                       id = "rd1"
+                       value = "bali" /> 
+                <!-- <label for = "bali"></label> -->
+            </p>   
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd2"
+                       value = "samantha" />
+                <!-- <label for = "samantha"></label> -->
+            </p> 
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd3"
+                       value = "tom" />
+                <!-- <label for = "tom"></label> -->
+            </p>    
+          </form>
+        
+        <p>Which voice would you continue using?</p>
+        <form id="rbuttons"> 
+            <p>          
+                <input type = "radio"
+                       name = "grp1"
+                       id = "rd1"
+                       value = "bali" /> 
+                <!-- <label for = "bali"></label> -->
+            </p>   
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd2"
+                       value = "samantha" />
+                <!-- <label for = "samantha"></label> -->
+            </p> 
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd3"
+                       value = "tom" />
+                <!-- <label for = "tom"></label> -->
+            </p>    
+          </form>
+        
+       
+        <p>Which voice would you not use in the future?</p>
+        <form id="rbuttons"> 
+            <p>          
+                <input type = "radio"
+                       name = "grp1"
+                       id = "rd1"
+                       value = "bali" /> 
+                <!-- <label for = "bali"></label> -->
+            </p>   
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd2"
+                       value = "samantha" />
+                <!-- <label for = "samantha"></label> -->
+            </p> 
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd3"
+                       value = "tom" />
+                <!-- <label for = "tom"></label> -->
+            </p>    
+          </form>
+        
+       
+        <p>Which voice could you relate with?</p>
+        <form id="rbuttons"> 
+            <p>          
+                <input type = "radio"
+                       name = "grp1"
+                       id = "rd1"
+                       value = "bali" /> 
+                <!-- <label for = "bali"></label> -->
+            </p>   
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd2"
+                       value = "samantha" />
+                <!-- <label for = "samantha"></label> -->
+            </p> 
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd3"
+                       value = "tom" />
+                <!-- <label for = "tom"></label> -->
+            </p>    
+          </form>
+        
+        
+        <p>Which voice is the most empowering?</p>
+        <form id="rbuttons"> 
+            <p>          
+                <input type = "radio"
+                       name = "grp1"
+                       id = "rd1"
+                       value = "bali" /> 
+                <!-- <label for = "bali"></label> -->
+            </p>   
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd2"
+                       value = "samantha" />
+                <!-- <label for = "samantha"></label> -->
+            </p> 
+            <p>
+               <input type = "radio"
+                       name = "grp1"
+                       id = "rd3"
+                       value = "tom" />
+                <!-- <label for = "tom"></label> -->
+            </p>    
+          </form>
+        
+        <button onclick= "fn1()" id="rbtn">Submit</button>
+        
+    </div>
+
+	<script src="script.js"></script>
 </body>
 </html>
