@@ -120,8 +120,8 @@
         let ques3 = getElementById("ques3");
         let ques4 = getElementById("ques4");
 
-        ques1.addEventListener("click", function(){
-            speakAssistant.preventDefault();
+        ques1.addEventListener("click", function(e){
+            e.preventDefault();
             var selectedText = ("It is currently clear and 15 degress in Davis. Temperatures are heading down from 15 to 9 degrees tonight");
             var utterance = new SpeechSynthesisUtterance(selectedText);
             var voices = window.speechSynthesis.getVoices();
@@ -130,8 +130,8 @@
             window.speechSynthesis.speak(utterance);
         });
 
-        ques2.addEventListener("click", function(){
-            speakAssistant.preventDefault();
+        ques2.addEventListener("click", function(e){
+            e.preventDefault();
             var selectedText = ("I dind't find any appointments for today");
             var utterance = new SpeechSynthesisUtterance(selectedText);
             var voices = window.speechSynthesis.getVoices();
@@ -140,8 +140,8 @@
             window.speechSynthesis.speak(utterance);
         });
 
-        ques3.addEventListener("click", function(){
-            speakAssistant.preventDefault();
+        ques3.addEventListener("click", function(e){
+            e.preventDefault();
             var selectedText = ("One option I see is Chipotle on West Blvd. Do you want that one?");
             var utterance = new SpeechSynthesisUtterance(selectedText);
             var voices = window.speechSynthesis.getVoices();
@@ -150,8 +150,8 @@
             window.speechSynthesis.speak(utterance);
         });
 
-        ques4.addEventListener("click", function(){
-            speakAssistant.preventDefault();
+        ques4.addEventListener("click", function(e){
+            e.preventDefault();
             var selectedText = ("1 mile is equal to 1.61 Kilometers");
             var utterance = new SpeechSynthesisUtterance(selectedText);
             var voices = window.speechSynthesis.getVoices();
