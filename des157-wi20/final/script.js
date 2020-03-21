@@ -142,5 +142,52 @@
                 alert("No channel selected");
             }
         }
+
+
+        var computerVoices =["Samantha", "Tom", "Q"];
+
+        // function speakAssistant(){
+        
+        // // var selectedEmail = emails[getRandomInt(0, emails.length-1)];
+        // // var utterance = new SpeechSynthesisUtterance(selectedEmail);
+        // // var voices = window.speechSynthesis.getVoices();
+        
+        // // utterance.volume = 0.15;
+        // // utterance.voice = voices.filter(function(voice) { return voice.name == computerVoices[getRandomInt(0,7)]; })[0];
+        
+        // // window.speechSynthesis.speak(utterance);
+        
+        // checkIfSpeaking();
+    
+        // }
+
+        ('a.say1').on('click', function(speakAssistant){
+            speakAssistant.preventDefault();
+            var selectedText = ("Hi, I am Bali!");
+            var utterance = new SpeechSynthesisUtterance(selectedText);
+            var voices = window.speechSynthesis.getVoices();
+            utterance.volume = 0.15;
+            utterance.voice = voices.filter(function(voice) { return voice.name == computerVoices[0]; })[0];
+            window.speechSynthesis.speak(utterance);
+
+            checkIfSpeaking();
+        })
+        
+        function checkIfSpeaking(){
+        
+            setTimeout( function(){
+                if(speechSynthesis.speaking){
+                console.log("speaking");
+                checkIfSpeaking();
+                }
+                else {
+                console.log("done");
+                setTimeout(speakAssistant, 2000);
+                }
+            }, 3000);
+        }
+
+        // createBox();
+        speakAssistant();
         
     })();

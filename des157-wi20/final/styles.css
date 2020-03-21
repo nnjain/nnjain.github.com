@@ -45,6 +45,10 @@ body {
     color: burlywood;
 }
 
+#text a{
+    color: burlywood;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -110,18 +114,6 @@ body {
     line-height: 1em;
 }
 
-#caption{
-    margin-left: 55%;
-    margin-right: 7%;
-    display: flex;
-    flex-direction: row;
-}
-
-#caption p{
-    color:whitesmoke;
-    padding: 0px 37px 0px 25px;
-}
-
 #questions img{
     height:90px;
     padding:10px;
@@ -130,6 +122,12 @@ body {
  #imge1 {
     margin-left: 54%;
  }
+
+ #caption{
+    margin-left: 55%;
+    display: flex;
+    flex-direction: row;
+}
 
 #questions p {
     margin-left: 55%;
@@ -141,6 +139,11 @@ body {
     line-height: 0.5px;
 }
 
+#caption p{
+    color:whitesmoke;
+    margin: 0% 5.2% 7% 4%;
+    padding:0px;
+}
 
 #feedback{
     margin-bottom: 20%;
@@ -181,6 +184,6 @@ body {
 }
 
 #rbtn{
-    margin-top: 4%;
+    margin-top: 2%;
     margin-left:91.7%;
 }
