@@ -1,44 +1,3 @@
-// (function() {
-//     "use strict";
-//     var computerVoices =["Samantha", "Tom", "Q"];
-
-
-//     function speakEmail(){
-    
-//     var selectedEmail = emails[getRandomInt(0, emails.length-1)];
-//     var utterance = new SpeechSynthesisUtterance(selectedEmail);
-//     var voices = window.speechSynthesis.getVoices();
-    
-//     utterance.volume = 0.15;
-//     utterance.voice = voices.filter(function(voice) { return voice.name == computerVoices[getRandomInt(0,7)]; })[0];
-    
-//     window.speechSynthesis.speak(utterance);
-    
-//     checkIfSpeaking();
-    
-//     }
-    
-//     function checkIfSpeaking(){
-    
-//     setTimeout( function(){
-    
-//     if(speechSynthesis.speaking){
-//     console.log("speaking");
-//     checkIfSpeaking();
-//     }
-//     else {
-//     console.log("done");
-//     setTimeout(speakEmail, 2000);
-//     }
-    
-//     }, 3000);
-    
-//     }
-    
-//     createBox();
-//     speakEmail();
-// })();
-
 (function() {
     'use strict'; 
         window.onscroll = function() {myFunction()};
@@ -128,9 +87,9 @@
         });
 
         function fn1(){
-            var rd1 = document.getElementById("rd1");
-            var rd2 = document.getElementById("rd1");
-            var rd3 = document.getElementById("rd1");
+            let rd1 = document.getElementById("rd1");
+            let rd2 = document.getElementById("rd1");
+            let rd3 = document.getElementById("rd1");
 
             if (rd1.checked==true){
                 alert("The channel selected is: " +rd1.value);
@@ -142,9 +101,6 @@
                 alert("No channel selected");
             }
         }
-
-
-        var computerVoices =["Samantha", "Tom", "Q"];
 
         // function speakAssistant(){
         
@@ -161,7 +117,53 @@
     
         // }
 
-        ('a.say1').on('click', function(speakAssistant){
+        let computerVoices =["Samantha", "Tom", "Q"];
+        let ques1 = getElementById("ques1");
+        let ques2 = getElementById("ques2");
+        let ques3 = getElementById("ques3");
+        let ques4 = getElementById("ques4");
+
+        ques1.addEventListener("click", function(){
+            speakAssistant.preventDefault();
+            var selectedText = ("It is currently clear and 15 degress in Davis. Temperatures are heading down from 15 to 9 degrees tonight");
+            var utterance = new SpeechSynthesisUtterance(selectedText);
+            var voices = window.speechSynthesis.getVoices();
+            utterance.volume = 0.15;
+            utterance.voice = voices.filter(function(voice) { return voice.name == computerVoices[i];})[0];
+            window.speechSynthesis.speak(utterance);
+        });
+
+        ques2.addEventListener("click", function(){
+            speakAssistant.preventDefault();
+            var selectedText = ("I dind't find any appointments for today");
+            var utterance = new SpeechSynthesisUtterance(selectedText);
+            var voices = window.speechSynthesis.getVoices();
+            utterance.volume = 0.15;
+            utterance.voice = voices.filter(function(voice) { return voice.name == computerVoices[i];})[0];
+            window.speechSynthesis.speak(utterance);
+        });
+
+        ques3.addEventListener("click", function(){
+            speakAssistant.preventDefault();
+            var selectedText = ("One option I see is Chipotle on West Blvd. Do you want that one?");
+            var utterance = new SpeechSynthesisUtterance(selectedText);
+            var voices = window.speechSynthesis.getVoices();
+            utterance.volume = 0.15;
+            utterance.voice = voices.filter(function(voice) { return voice.name == computerVoices[0]; })[0];
+            window.speechSynthesis.speak(utterance);
+        });
+
+        ques4.addEventListener("click", function(){
+            speakAssistant.preventDefault();
+            var selectedText = ("1 mile is equal to 1.61 Kilometers");
+            var utterance = new SpeechSynthesisUtterance(selectedText);
+            var voices = window.speechSynthesis.getVoices();
+            utterance.volume = 0.15;
+            utterance.voice = voices.filter(function(voice) { return voice.name == computerVoices[0]; })[0];
+            window.speechSynthesis.speak(utterance);
+        });
+
+        $('a.say1').on('click', function(speakAssistant){
             speakAssistant.preventDefault();
             var selectedText = ("Hi, I am Bali!");
             var utterance = new SpeechSynthesisUtterance(selectedText);
